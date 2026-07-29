@@ -1,0 +1,201 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:linear-gradient(to bottom,#010b16,#021c34);
+color:white;
+}
+
+/* HEADER */
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#021c34;
+border-bottom:1px solid #043a63;
+}
+
+/* LOGO */
+.logo-area{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo{
+height:50px;
+}
+
+.logo-text{
+color:#00bfff;
+font-size:22px;
+}
+
+/* PESQUISA */
+.search-area form{
+display:flex;
+gap:5px;
+}
+
+.search-area input{
+padding:8px;
+width:300px;
+border:none;
+border-radius:5px;
+}
+
+.search-area button{
+padding:8px 10px;
+background:#00bfff;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* PERFIL */
+.perfil-area{
+display:flex;
+gap:10px;
+}
+
+.btn-perfil{
+text-decoration:none;
+color:white;
+border:1px solid #00bfff;
+padding:6px 12px;
+border-radius:5px;
+}
+
+.btn-perfil:hover{
+background:#00bfff;
+color:#021c34;
+}
+
+/* LINHA */
+.linha{
+height:1px;
+background:#043a63;
+}
+
+/* FILTROS */
+.filtros{
+display:flex;
+justify-content:center;
+gap:40px;
+margin:20px 0;
+}
+
+.dropdown{
+position:relative;
+}
+
+.btn-filtro{
+background:#021c34;
+border:1px solid #00bfff;
+color:white;
+padding:8px 15px;
+cursor:pointer;
+border-radius:5px;
+}
+
+.dropdown-conteudo{
+display:none;
+position:absolute;
+background:#021c34;
+border:1px solid #043a63;
+min-width:150px;
+}
+
+.dropdown-conteudo a{
+display:block;
+padding:10px;
+color:white;
+text-decoration:none;
+}
+
+.dropdown:hover .dropdown-conteudo{
+display:block;
+}
+
+/* HERO */
+.hero{
+text-align:center;
+margin-top:40px;
+}
+
+/* BOTÃO */
+.formulario-area{
+text-align:center;
+margin:30px;
+}
+
+.btn-formulario{
+background:#00bfff;
+padding:12px 20px;
+border-radius:5px;
+text-decoration:none;
+color:#021c34;
+font-weight:bold;
+}
+
+/* CARROSSEL */
+.lancamentos{
+margin-top:40px;
+}
+
+.titulo-lancamento{
+text-align:center;
+margin-bottom:20px;
+}
+
+.carrossel-container{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+}
+
+.carrossel{
+display:flex;
+overflow-x:auto;
+gap:20px;
+scroll-behavior:smooth;
+width:80%;
+padding:10px;
+}
+
+.card img{
+height:200px;
+border-radius:10px;
+}
+
+/* SETAS */
+.seta{
+background:#021c34;
+border:1px solid #00bfff;
+color:white;
+font-size:22px;
+padding:10px;
+cursor:pointer;
+} 
+.votacao{
+text-align:center;
+margin-top:20px;
+}
+
+.estrelas-voto span{
+font-size:30px;
+cursor:pointer;
+color:gray;
+transition:0.2s;
+}
+
+.estrelas-voto span:hover{
+color:gold;
+transform:scale(1.2);
+}

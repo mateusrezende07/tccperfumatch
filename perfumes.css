@@ -1,0 +1,137 @@
+/* NÃO mexe no body, header, nem logo do site */
+
+/* CONTAINER DO PERFUME */
+.perfume-detalhe {
+  display: grid;
+  grid-template-columns: 280px 1fr 240px;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* BLOCOS */
+.bloco {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* IMAGENS */
+.logo-marca {
+  height: 60px;
+  display: block;
+  margin: auto;
+}
+
+.img-perfume {
+  width: 100%;
+  max-width: 250px;
+  display: block;
+  margin: 15px auto;
+  border-radius: 10px;
+}
+
+/* INFO */
+.info p {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: 5px 0;
+}
+
+/* NOTAS (PIRÂMIDE) */
+.notas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+/* CARD DA NOTA */
+.nota {
+  background: white;
+  color: black;
+  padding: 10px !important;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 13px;
+  width: 100px !important;
+  transition: 0.2s;
+}
+
+/* HOVER BONITO */
+.nota:hover {
+  transform: scale(1.05);
+}
+
+/* IMAGEM DA NOTA (FORÇADO PRA FUNCIONAR) */
+.nota img {
+  width: 80px !important;
+  height: 80px !important;
+  object-fit: contain !important;
+  margin-bottom: 5px;
+}
+
+/* PREÇO */
+.preco {
+  color: #00bfff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ESTRELAS */
+.estrelas::before {
+  content: "★★★★★";
+  color: gold;
+}
+
+/* VOTAÇÃO */
+.estrelas-voto {
+  position: relative;
+  z-index: 10;
+}
+
+/* SENSAÇÃO */
+.sensacao {
+  color: #ccc;
+  font-style: italic;
+}
+
+/* INSPIRADOS */
+.inspirados {
+  list-style: none;
+  padding: 0;
+}
+
+.inspirados li {
+  background: rgba(255,255,255,0.08);
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+  .perfume-detalhe {
+    grid-template-columns: 1fr;
+  }
+}
+.estrelas-input {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.estrelas-input input {
+  display: none;
+}
+
+.estrelas-input label {
+  font-size: 30px;
+  color: #444;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.estrelas-input input:checked ~ label,
+.estrelas-input label:hover,
+.estrelas-input label:hover ~ label {
+  color: gold;
+}
